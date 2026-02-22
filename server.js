@@ -4,6 +4,7 @@ const { Server } = require("socket.io")
 const cors = require("cors");
 const pool = require("./db/db")
 const app = express();
+require("dotenv").config();
 app.use(cors());
 const PORT = process.env.PORT || 5000
 const server = http.createServer(app);
